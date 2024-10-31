@@ -1,0 +1,7 @@
+Sale.create(amount: 100, sold_on: Date.today - 6.days)
+Sale.create(amount: 150, sold_on: Date.today - 5.days)
+Sale.create(amount: 75, sold_on: Date.today - 4.days)
+Sale.create(amount: 200, sold_on: Date.today - 3.days)
+Sale.create(amount: 175, sold_on: Date.today - 2.days)
+Sale.create(amount: 225, sold_on: Date.today - 1.day)
+Sale.create(amount: 300, sold_on: Date.today)
