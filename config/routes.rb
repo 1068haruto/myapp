@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  
   root 'pages#index' # top.html.erbを表示するためのルート
   get 'home', to: 'pages#home' # home.html.erbを表示するためのルート
   get 'sales', to: 'sales#index' # home.html.erbを表示するためのルート
-
+  resources :users, only: [:new, :create]
 
 
 
