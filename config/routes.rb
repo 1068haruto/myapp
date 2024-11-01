@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  root "sales#index"
+  root 'pages#index' # top.html.erbを表示するためのルート
+  get 'home', to: 'pages#home' # home.html.erbを表示するためのルート
+  get 'sales', to: 'sales#index' # home.html.erbを表示するためのルート
+  devise_for :users
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
