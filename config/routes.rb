@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   root 'pages#index' # top.html.erbを表示するためのルート
   get 'home', to: 'pages#home' # home.html.erbを表示するためのルート
   get 'sales', to: 'sales#index' # home.html.erbを表示するためのルート
-
-
-
+  resources :users, only: [:new, :create]
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
