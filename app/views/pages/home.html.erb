@@ -13,8 +13,10 @@
     <main class="container mt-5">
         <h2>これはホームページです</h2>
         <p>Bootstrapを使って簡単なデザインを作成しました。</p>
-        <%= link_to 'ホーム', home_path %>
-        <%= link_to 'シナリオ', sales_path %>
+        <div class="text-center">
+          <%= link_to 'ホーム', home_path, class: 'btn btn-primary mx-2' %>
+          <%= link_to 'シナリオ', sales_path, class: 'btn btn-success mx-2' %>
+        </div>
     </main>
     <footer class="bg-light text-center py-3">
         <p>&copy; 2023 例のサイト</p>
